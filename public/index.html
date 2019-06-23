@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sample</title>
+    <!-- WEBフォントをダウンロード -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet" />
+    <!-- Iconをダウンロード -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!--
+      ブラウザごとに設定されているcssの初期値を無効にする
+      https://github.com/filipelinhares/ress
+    -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header>
+      <div></div>
+      <h2>L talk</h2>
+      <div>
+        <i class="material-icons">settings</i>
+      </div>
+    </header>
+    <div class="container">
+      <div class="thread-wrapper">
+        <div class="from">斉藤さん</div>
+        <div class="content">ついでにお昼ゴハンも買ってきてねー(*´ェ`)ノシ</div>
+        <div class="content my-res">
+          くたばれ
+        </div>
+        <div class="from">斉藤さん</div>
+        <div class="content">死ぬのはお前だ 相棒</div>
+        <div class="from">斉藤さん</div>
+        <div class="content">
+          貴様のいるキャンプ場に熊とトラとチワワ１００匹を放った
+        </div>
+        <div class="content my-res">
+          うわなにをするくぁｗせｄｒｆｔｇｙふじこｌｐ
+        </div>
+      </div>
+      <form>
+        <div class="input-form">
+          <div>
+            <textarea rows="1"></textarea>
+            <div class="material-icons-wrapper">
+              <i class="material-icons">tag_faces</i>
+            </div>
+          </div>
+        </div>
+        <div class="material-icons-wrapper">
+          <i class="material-icons">send</i>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
