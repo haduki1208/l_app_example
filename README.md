@@ -109,7 +109,7 @@
 | カラム名    | データ型         | NULLを許可 | 主キー   | ユニーク  | 外部キー | 備考  |
 | ------- | ------------ | ------- | ----- | ----- | ---- | --- |
 | id      | unsigned int | false   | true  | false |      | AI  |
-| user_id | varchar(20)  | false   | false | true  |      |     |
+| user_id | varchar(50)  | false   | false | true  |      |     |
 | name    | varchar(20)  | false   | false | false |      |     |
 |         |              |         |       |       |      |     |
 

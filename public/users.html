@@ -14,37 +14,40 @@
       https://github.com/filipelinhares/ress
     -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/users.css" />
   </head>
   <body>
     <header>
       <div>
-        <a href="users.html">
-          <i class="material-icons">face</i>
+        <a href="index.html">
+          <i class="material-icons">home</i>
         </a>
       </div>
-      <h2>L talk</h2>
+      <h2>user setting</h2>
       <div>
         <i class="material-icons editSetting">settings</i>
       </div>
     </header>
+
     <div class="container">
-      <div class="thread-wrapper threadWrapper"></div>
-      <form>
-        <div class="input-form">
-          <div>
-            <textarea class="inputMessage" rows="1"></textarea>
-            <div class="material-icons-wrapper">
-              <i class="material-icons showSticker">tag_faces</i>
-            </div>
-          </div>
-        </div>
-        <div class="material-icons-wrapper">
-          <i class="material-icons sendMassage">send</i>
-        </div>
+      <h2 class="userFormHeader">user情報を入れる</h2>
+      <form class="user-form-container">
+        <label>
+          user id
+          <input type="text" name="name" pattern="^([a-zA-Z0-9]{6,})$" placeholder="user id" /><br />
+        </label>
+
+        <label>
+          nickaname
+          <input type="text" name="nickname" pattern="^([a-zA-Z0-9]{6,})$" placeholder="nickname" /><br />
+        </label>
+
+        <button type="submit" class="userFormContainerSubmit">
+          submit
+        </button>
       </form>
     </div>
 
-    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/users.js"></script>
   </body>
 </html>
